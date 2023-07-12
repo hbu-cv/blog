@@ -18,7 +18,12 @@ cp ./dvt_eclipse /usr/app
 cd license_dir
 cp ./dvt.lic /usr/app/dvt_eclipse/licenses
 ```
-4. 设置环境变量
+4. 打 jar patch
+```bash
+mv ro.amiq.dvt.batch-20.1.40.jar ./usr/app/dvt_eclipse/batch/ro.amiq.dvt.batch-20.1.40.jar
+mv ro.amiq.dvt.flclient-2.8.jar ./usr/app/dvt_eclipse/batch/libs/ro.amiq.dvt.flclient-2.8.jar
+```
+5. 设置环境变量
 ```bash
 export DVT_HOME=/usr/app/dvt_eclipse
 export DVT_LICENSE_FILE=$DVT_HOME/licenses/dvt.lic
